@@ -172,18 +172,15 @@
         <div class="video-title">${video.title}</div>
         <a class="watch-link" href="${video.url}" target="_blank">Watch Video</a>
       `;
-        grid.appendChild(card);
-      });
-    })
-    .then(() => {
-      window.addEventListener('load', () => {
-        document.getElementById('loading-spinner').style.display = 'none';
-      });
-    })
-    .catch(error => {
-      console.error('Error loading portfolio data:', error);
-      document.getElementById('loading-spinner').style.display = 'none';
+      grid.appendChild(card);
     });
+    // ✅ Hide spinner AFTER cards are built
+    document.getElementById('loading-spinner').style.display = 'none';
+  })
+  .catch(error => {
+    console.error('Error loading portfolio data:', error);
+    document.getElementById('loading-spinner').style.display = 'none';
+  });
 
   const toggleButton = document.getElementById('toggle-dark-mode');
   toggleButton.addEventListener('click', () => {
