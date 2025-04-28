@@ -152,7 +152,7 @@
 </main>
 
 <footer>
-  <p>&copy; Bernalo Thumbnails | Thumbnail Redesign Portfolio</p>
+  <p>&copy; 2025 YourName | Thumbnail Redesign Portfolio</p>
 </footer>
 
 <script>
@@ -166,11 +166,11 @@
         card.style.animationDelay = `${index * 0.1}s`;
         card.innerHTML = `
           <div class="image-container">
-            <img src="${video.beforeImage}" alt="Before Thumbnail">
-            <img src="${video.afterImage}" alt="After Thumbnail" class="after">
+            <img src="\${video.beforeImage}" alt="Before Thumbnail">
+            <img src="\${video.afterImage}" alt="After Thumbnail" class="after">
           </div>
-          <div class="video-title">${video.title}</div>
-          <a class="watch-link" href="${video.url}" target="_blank">Watch Video</a>
+          <div class="video-title">\${video.title}</div>
+          <a class="watch-link" href="\${video.url}" target="_blank">Watch Video</a>
         `;
         grid.appendChild(card);
       });
