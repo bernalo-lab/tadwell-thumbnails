@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Book Review - Choose Yourself By James Altucher",
+    "url": "https://www.youtube.com/watch?v=Mgzdcm5uT80",
+    "beforeImage": "images/before/video1_before.png",
+    "afterImage": "images/after/video1_after.jpeg"
+  },
+  {
+    "title": "Video Title 2",
+    "url": "https://www.youtube.com/watch?v=example2",
+    "beforeImage": "images/before/video2_before.png",
+    "afterImage": "images/after/video2_after.png"
+  }
+]
