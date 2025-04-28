@@ -157,21 +157,21 @@
 
 <script>
   fetch('data.json')
-    .then(response => response.json())
-    .then(videos => {
-      const grid = document.getElementById('portfolio-grid');
-      videos.forEach((video, index) => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.style.animationDelay = `${index * 0.1}s`;
-        card.innerHTML = `
-          <div class="image-container">
-            <img src="\${video.beforeImage}" alt="Before Thumbnail">
-            <img src="\${video.afterImage}" alt="After Thumbnail" class="after">
-          </div>
-          <div class="video-title">\${video.title}</div>
-          <a class="watch-link" href="\${video.url}" target="_blank">Watch Video</a>
-        `;
+  .then(response => response.json())
+  .then(videos => {
+    const grid = document.getElementById('portfolio-grid');
+    videos.forEach((video, index) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.style.animationDelay = `${index * 0.1}s`;
+      card.innerHTML = `
+        <div class="image-container">
+          <img src="${video.beforeImage}" alt="Before Thumbnail">
+          <img src="${video.afterImage}" alt="After Thumbnail" class="after">
+        </div>
+        <div class="video-title">${video.title}</div>
+        <a class="watch-link" href="${video.url}" target="_blank">Watch Video</a>
+      `;
         grid.appendChild(card);
       });
     })
