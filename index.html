@@ -92,10 +92,16 @@
     }
     .image-container {
       position: relative;
+      aspect-ratio: 16 / 9; /* Optional: Enforce thumbnail ratio */
+      overflow: hidden;
     }
     .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
       width: 100%;
-      display: block;
+      object-fit: cover;
       transition: opacity 0.5s;
     }
     .image-container img.after {
