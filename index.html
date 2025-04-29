@@ -178,7 +178,7 @@
 
 <main>
   <div class="grid-hint">
-    🖱️ Hover over each thumbnail to see the "Before" image
+    🖱️ Hover over each thumbnail to see the "After" image
   </div>
   <div class="grid" id="portfolio-grid">
     <!-- Portfolio cards will be injected here -->
@@ -186,7 +186,7 @@
 </main>
 
 <footer>
-  <p>&copy; 2025 YourName | Thumbnail Redesign Portfolio</p>
+  <p>&copy; 2025 Bernalo Thumbnails | Thumbnail Redesign Portfolio</p>
 </footer>
 
 <script>
@@ -199,7 +199,7 @@
         card.className = 'card';
         card.style.animationDelay = `${index * 0.1}s`;
         card.innerHTML = `
-          <div class="hover-label">Hover to see Before</div>
+          <div class="hover-label">Hover to see "After" image</div>
           <div class="image-container">
             <img src="${video.beforeImage}" alt="Before Thumbnail">
             <img src="${video.afterImage}" alt="After Thumbnail" class="after">
